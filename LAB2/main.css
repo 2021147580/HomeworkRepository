@@ -1,4 +1,6 @@
-title
+@charset "utf-8";
+
+.title
 {
     margin : 10px; color: magenta;
     font-size : 250%;
