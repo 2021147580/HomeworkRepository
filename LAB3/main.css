@@ -63,7 +63,7 @@ body{
 }
 .border
 {
-    height: 500px; width: 500px;
+    height: 500px; width: 500px; 
     border: 1px solid black;
 }
 
@@ -74,7 +74,7 @@ body{
 }
 .rotaition:hover
 {
-    transform: rotate(360deg) scale(1,1);
+    transform: rotate(360deg);
 }
 
 .growup
