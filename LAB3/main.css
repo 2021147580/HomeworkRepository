@@ -1,3 +1,8 @@
+body{
+    width: 1020px;
+    margin: auto;
+}
+
 .title
 {
     margin : 10px; color: magenta;
@@ -27,20 +32,60 @@
     border: 3px solid cyan;
 }
 
-.linear
+.normal
 {
-    margin : 10px; color: magenta;
-    font-size : 250%;
-    font-family: Georgia, serif;
-    position: relative;
-    animation: movingtitle linear 5s 1s 2 alternate;
+    margin : 0px; padding: 5px;
+    border: 3px solid black;
+}
+
+.selected
+{
+    margin : 0px; padding: 5px;
+    border: 3px solid red;
+}
+
+.move_to_left
+{
+    animation: movingtitle linear 5s;
 }
 
 @keyframes movingtitle
 {
-    0% {opacity: 1; right: 0px;}
-    25% {opacity: 1; right: 250px;}
-    50% {opacity: 1; right: 500px;}
-    75% {opacity: 1; right: 750px;}
-    100% {opacity: 1; right: 1000px;}
+    from{
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to{
+        margin-left: 0%;
+        width: 100%;
+    }
 }
+.border
+{
+    height: 500px; width: 500px;
+    border: 1px solid black;
+}
+
+.rotaition
+{
+    margin : 0px; 
+    transition: transform 2s;
+}
+.rotaition:hover
+{
+    transform: rotate(360deg) scale(1,1);
+}
+
+.growup
+{
+    margin : 0px;
+    height: 50px; width: 50px;
+    transition: all ease 2s;
+}
+.growup:hover
+{
+    height: 500px; width: 500px;
+}
+
+
