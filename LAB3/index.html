@@ -5,16 +5,21 @@
         <link rel = “stylesheet” type = “text/css” href = “main.css”>
     </head>
     <body>
-        <div class = "linear">INTERNET-PROGRGMING SHOP</div>
-        <div  class = "click">로그인<button type="button" onclick="location.href='./signup.html'">회원가입</button></div>
+        <div class = "title move_to_left">INTERNET-PROGRGMING SHOP</div>
         <p>
-            <label>아이디 : <input name = "id" type = "text"  required></label>
+            <button id = "selected">메인페이지</button>  
+            <button id = "click" type = "button" onclick = "location.href = 'login.html' ">로그인</button>
+            <button id = "click" type = "button" onclick = "location.href = 'signup.html' ">회원가입</button>
         </p>
         <p>
-            <label>비밀번호 : <input name = "password" type = "text"  required></label>
+            <div id = "border rotaition">
+                <img id = "product" src = "product1.jpg" alt = "가나 초콜릿">
+            </div>
         </p>
         <p>
-            <div class = "submit"><input type = "submit" value = "로그인"></div>
+            <div id = "border growup">	
+                <img id = "product" src = "product2.jpg" alt = "킨더 초콜릿">
+            </div> 
         </p>
     </body>
 </html>
