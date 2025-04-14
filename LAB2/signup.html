@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>회원가입</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <h1>Welcome to <span class="highlight">INTERNET-PROGRAMMING MOVIE SITE</span></h1>
+  <p>
+    <a href="login.html" class="link">로그인</a> |
+    <a href="signup.html" class="link">회원가입</a>
+  </p>
+
+  <form action="login.html" method="get">
+    <div class="form-group">
+      <label for="name">이름:</label>
+      <input type="text" id="name" name="name" placeholder="이름을 입력하세요" autofocus required><br><br>
+    </div>
+  
+    <div class="form-group">
+      <label for="birth">생일:</label>
+      <input type="date" id="birth" name="birth"><br><br>
+    </div>
+  
+    <div class="form-group">
+      <label>성별:</label>
+      <input type="radio" id="male" name="gender" value="남성" required>
+      <label for="male">남성</label>
+      <input type="radio" id="female" name="gender" value="여성">
+      <label for="female">여성</label><br><br>
+    </div>
+  
+    <div class="form-group">
+      <label for="grade">학년:</label>
+      <input type="number" id="grade" name="grade" min="1" max="4" value="1" step="1"><br><br>
+    </div>
+  
+    <div class="form-group">
+      <label for="userid">아이디:</label>
+      <input type="text" id="userid" name="userid" required placeholder="아이디를 입력하세요"><br><br>
+    </div>
+  
+    <div class="form-group">
+      <label for="password">비밀번호:</label>
+      <input type="password" id="password" name="password" required placeholder="비밀번호를 입력하세요"><br><br>
+    </div>
+  
+    <div class="form-group">
+      <label for="email">이메일:</label>
+      <input type="email" id="email" name="email" autocomplete="on" placeholder="email@domain 형식으로 입력하세요"><br><br>
+    </div>
+  
+    <div class="form-group">
+      <label for="question">보안 질문:</label>
+      <select id="question" name="question" required>
+        <option value="">질문을 선택하세요</option>
+        <option value="pet">당신의 첫 반려동물 이름은?</option>
+        <option value="school">당신의 초등학교 이름은?</option>
+        <option value="city">당신이 태어난 도시는?</option>
+      </select><br><br>
+    </div>
+  
+    <div class="form-group">
+      <label for="answer">답변:</label>
+      <input type="text" id="answer" name="answer" placeholder="답변을 입력하세요"><br><br>
+    </div>
+  
+    <button type="submit" class="signup">Signup</button>
+    <button type="reset" class="cancel">Cancel</button>
+  </form>
+</body>
+</html>

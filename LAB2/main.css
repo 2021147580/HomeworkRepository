@@ -1,0 +1,83 @@
+  /* 배경색 및 전체 폰트 */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;       
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* 제목 */
+  h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* 강조색 */
+  .highlight {
+    color: red;
+    font-weight: bold;
+  }
+  
+  /* 링크 */
+  .link {
+    color: blue;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  
+  /* 안내문구 */
+  .info {
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+  
+  /* 폼 */
+  form {
+    margin: 0 auto;
+    max-width: 600px;
+    border: 2px solid black;
+    padding: 20px;
+    text-align: left;
+  }
+
+  /* 라벨들 */
+  label {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+
+  /* 입력값 박스(radio 제외) */
+  input:not([type="radio"]),
+  select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    box-sizing: border-box;
+    height: 35px;
+  }
+  
+  /* 버튼(공통) */
+  button {
+    width: 48%;
+    height: 40px;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /* 로그인 및 회원가입 버튼 */
+  .signup {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  /* 취소 버튼 */
+  .cancel {
+    background-color: red;
+    color: white;
+  }
+  
